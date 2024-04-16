@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF6AF;
+}
+
+body, input, button {
+    font-family: "Fjalla One";
+}
+
+input, button, .notif{
+    font-size: 14pt;
+}
+
+.bagianTajuk {
+    align-items: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.bagianTajuk > h1 {
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.bagianInput {
+    background: #f8f4e5;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 50px 100px;
+}
+
+.bagianInput > h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 15pt;
+    font-size: 18pt;
+    letter-spacing: 2px;
+}
+
+.bagianInput > form > button {
+    background-color: #ffa580;
+    color: black;
+    border: 1px solid black;
+    line-height: 28pt;
+    letter-spacing: 2px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+}
+
+.bagianInput > form > button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black
+}
+
+.bagianInput > form > .input > input {
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid black;
+    background: #f8f4e5;
+    line-height: 28pt;
+    margin-bottom: 15pt;
+}
+
+.bagianInput > form > .input > input:focus{
+    border-bottom: 5px solid #ffa580;
+}
+
+.bagianInput > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.bagianInput > form > .inputPenulisDanTahun {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bagianInput > form > .inputPenulisDanTahun > div {
+    flex-basis: 400px;
+}
+
+.bagianInput > form > .inputPenulisDanTahun > div > input {
+    background: #f8f4e5;
+    border: none;
+    border-bottom: 5px solid black;
+    margin-bottom: 15pt;
+    padding-left: 5px;
+    line-height: 28pt;
+    outline: none;
+    width: 100%;
+}
+
+.bagianInput > form > .inputPenulisDanTahun > div > input:focus{
+    border-bottom: 5px solid #ffa580
+}
+
+.bagianInput > form > .inputBukuSelesai {
+    margin-bottom: 15pt ;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bagianInput > form > .inputBukuSelesai > input[type="checkbox"]{
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.bagianInput > form > .inputBukuSelesai > input[type="checkbox"]:checked + label{
+    background-color: #ffa580;
+}
+
+.bagianInput > form > .inputBukuSelesai > input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+
+.bagianInput > form > .inputBukuSelesai > label {
+    border: 1px solid black;
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+    background-color: #f8f4e5;
+}
+
+.bagianInput > form > .inputBukuSelesai > label:after {
+    border: 2px solid black;
+    content: "";
+    width: 10px;
+    height: 5px;
+    opacity: 0;
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    transform: rotate(-45deg);
+    border-top: none;
+    border-right: none;
+}
+
+.bagianInput > form > .inputBukuSelesai > span {
+    color: black;
+    font-size: 13pt;
+    padding-top: 2pt;
+}
+
+.bagianRak {
+    border: 2px solid black;
+    background-color: #f8f4e5;
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.bagianRak > form {
+    padding: 30px 100px;
+}
+
+.barisTombolCari {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.barisTombolCari > input {
+    padding-left: 5px;
+    background-color: #f8f4e5;
+    border: none;
+    border-bottom: 5px solid black;
+    outline: none;
+    line-height: 28pt;
+    width: 459px;
+}
+
+.barisTombolCari > input:focus {
+    border-bottom: 5px solid #ffa580
+}
+
+.barisTombolCari > button {
+    border: 1px solid black;
+    background-color: #ffa580;
+    box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+    color: black;
+    cursor: pointer;
+    height: 38px;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    width: 100px;
+}
+
+.barisTombolCari > button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black
+}
+
+.bagianRak > .barisWadah {
+    display: flex;
+    flex-direction: row;
+}
+
+.itemWadah{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.itemJudul, .itemPenulis{
+    font-size: 13pt;
+}
+
+.itemJudul{
+    font-weight: 600;
+}
+
+.itemTombolAksi{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.itemTombolAksi > button{
+    background-color: #ffa580;
+    box-shadow: 2px 3px 1px 1px #95a4ff, 2px 3px 1px 2px black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 13pt;
+    height: 35px;
+    transition: 0.2s all ease-in-out;
+    width: 55px;
+}
+
+.itemTombolAksi > button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black
+}
+
+.umpet{
+    display: none;
+}
+
+
+.judulWadah {
+    font-size: 18pt;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.notif{
+    border: 2px solid black;
+    background-color: #F8F4E5;
+    box-shadow:  3px 5px #ffa580, 3px 5px 1px 2px black;
+    position: fixed;
+    padding: 0.5rem 1rem;
+    right: 1rem;
+    top: 1rem;
+    z-index: 100;
+}
+
+::selection{
+    background-color: #95a4ff;
+}
+
+.wadahKiri{
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    border-left: none;
+    border-bottom: none;
+    flex-basis: 400px;
+    padding: 15px 20px;
+}
+
+.wadahKanan{
+    border-top: 2px solid black;
+    border-left: 1px solid black;
+    border-right: none;
+    border-bottom: none;
+    flex-basis: 400px;
+    padding: 15px 20px;
+}

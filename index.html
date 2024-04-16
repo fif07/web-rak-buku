@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Rak Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="bagianTajuk">
+  <h1>Web Rak Buku</h1>
+</header>
+<main>
+  <section class="bagianInput">
+    <h2>Tambah Buku Baru</h2>
+    <form id="formInputBuku">
+      <div class="input">
+        <input id="judulBuku" type="text" required placeholder="Judul">
+      </div>
+      <div class="inputPenulisDanTahun">
+        <div>
+          <input id="penulisBuku" type="text" required placeholder="Penulis">
+        </div>
+        <div>
+          <input id="tahunBuku" type="number" required placeholder="Tahun">
+        </div>
+      </div>
+      <div class="inputBukuSelesai">
+        <input id="sudahDibaca" type="checkbox">
+        <label for="sudahDibaca"></label>
+        <span>Sudah dibaca</span>
+      </div>
+      <button id="kirimBuku" type="submit">Masukkan Buku ke Rak</button>
+    </form>
+  </section>
+  <section class="bagianRak">
+    <form id="formCariBuku">
+      <div class="barisTombolCari">
+        <input id="inputCari" type="text" required placeholder="Cari buku">
+        <button id="tombolCari" type="submit">Cari</button>
+      </div>
+    </form>
+    <div class="barisWadah">
+      <div class="wadahKiri">
+        <h2 class="judulWadah">Buku Belum Dibaca</h2>
+        <div id="bukuBelumDibaca">
+        </div>
+      </div>
+      <div class="wadahKanan">
+        <h2 class="judulWadah">Buku Sudah Dibaca</h2>
+        <div id="bukuSudahDibaca">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
